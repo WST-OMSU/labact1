@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document Metadata & Resource Declarations -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Web Systems Portfolio Laboratory Activity">
+  <title>Student Web Systems Portfolio</title>
+
+  <!-- External Stylesheet and JavaScript Connections -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Top Branding Header & Site Navigation -->
+  <header>
+    <h1>Web Systems & Technology Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#schedule">Class Schedule</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Primary Page Content Area -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About the Developer</h2>
+      <p>
+        Welcome to my web development portfolio! I am currently learning 
+        <b>HTML5 document architecture</b>, <i>semantic structure</i>, and <u>web accessibility</u>.
+      </p>
+      
+      <!-- Profile Image & Divider -->
+      <img src="profile.jpg" alt="Developer Profile Picture" width="150">
+      <hr>
+    </section>
+
+    <!-- Tabular Course Schedule Section -->
+    <section id="schedule">
+      <h2>Academic Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Course Title</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Monday</td>
+            <td>09:00 AM - 12:00 PM</td>
+            <td>Web Systems and Technology</td>
+            <td>Lab 201</td>
+          </tr>
+          <tr>
+            <td>01:00 PM - 04:00 PM</td>
+            <td>Database Management Systems</td>
+            <td>Lab 203</td>
+          </tr>
+          <tr>
+            <td colspan="2">Wednesday (Special Lecture)</td>
+            <td>UI/UX Design Fundamentals</td>
+            <td>Auditorium</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Project Article Showcase -->
+    <article id="projects">
+      <h2>Laboratory Project Objectives</h2>
+      <p>Follow these steps to complete the laboratory task:</p>
+      <ol>
+        <li>Construct the HTML boilerplate in Visual Studio Code.</li>
+        <li>Validate the document using the W3C HTML Validator.</li>
+        <li>Commit changes to Git and deploy live on GitHub Pages.</li>
+      </ol>
+    </article>
+
+    <!-- Tangential Sidebar Information -->
+    <aside>
+      <h3>Quick Links & Resources</h3>
+      <ul>
+        <li><a href="https://validator.w3.org" target="_blank">W3C HTML Validator</a></li>
+        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+      </ul>
+    </aside>
+
+    <!-- Interactive Student Feedback Form -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <form action="#" method="POST">
+        
+        <!-- Text & Email Inputs -->
+        <div>
+          <label for="username">Full Name:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+          <label for="useremail">Email Address:</label>
+          <input type="email" id="useremail" name="useremail" placeholder="name@example.com" required>
+        </div>
+
+        <div>
+          <label for="userpass">Password:</label>
+          <input type="password" id="userpass" name="userpass" placeholder="Enter password">
+        </div>
+
+        <!-- Radio Buttons (Single Choice) -->
+        <p>Year Level:</p>
+        <input type="radio" id="year1" name="yearlevel" value="1st Year">
+        <label for="year1">1st Year</label><br>
+        <input type="radio" id="year2" name="yearlevel" value="2nd Year">
+        <label for="year2">2nd Year</label><br>
+
+        <!-- Checkboxes (Multiple Choices) -->
+        <p>Areas of Interest:</p>
+        <input type="checkbox" id="frontend" name="interest" value="Frontend">
+        <label for="frontend">Frontend Development</label><br>
+        <input type="checkbox" id="backend" name="interest" value="Backend">
+        <label for="backend">Backend Development</label><br>
+
+        <!-- Dropdown Selection -->
+        <div>
+          <label for="course">Select Course:</label>
+          <select id="course" name="course">
+            <option value="bsit">BS Information Technology</option>
+            <option value="bscs">BS Computer Science</option>
+          </select>
+        </div>
+
+        <!-- Multi-line Text Area -->
+        <div>
+          <label for="message">Feedback Message:</label><br>
+          <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Bottom Page Footer -->
+  <footer>
+    <p>&copy; 2026 Web Systems & Technology Class. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
